@@ -1,0 +1,117 @@
+<!doctype html>
+<!-- DRAFT for counsel review. The deletion mechanics below must match what the
+     app actually does at submission time (see screen 20, Screen Flows v2.1).
+     Google Play requires this URL to be publicly reachable and to describe
+     both in-app and web deletion routes. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your Ol-ga account</title>
+<meta name="description" content="Delete your Ol-ga account and everything in it — in the app, or by requesting deletion here.">
+<link rel="canonical" href="https://www.ol-ga.com/delete/">
+<meta name="theme-color" content="#14110F">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead-in">
+    <a class="wordmark" href="/"><span>Ol-ga</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/professionals/">For professionals</a>
+      <a href="/events/">For events &amp; venues</a>
+      <a href="/about/">About</a>
+      <a class="btn btn-ghost btn-sm" href="/#access">Request access</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap section">
+    <div class="cols cols-2">
+      <div class="prose">
+        <p class="eyebrow">Account deletion</p>
+        <h1 style="font-size:clamp(1.9rem,4vw,2.9rem);max-width:18ch">Delete your account and everything in it.</h1>
+        <p class="lede">The fastest route is inside the app: <strong>Home &rarr; Settings &rarr; Delete your account</strong>. If you no longer have the app installed, use the form here and we will do it for you.</p>
+
+        <h2>What is deleted immediately</h2>
+        <ul>
+          <li>Your profile, your stated intent and your photo</li>
+          <li>Every conversation you are part of</li>
+          <li>Your network record and all outcome entries</li>
+          <li>Your event sign-ups and any live sessions</li>
+        </ul>
+
+        <h2>What we keep</h2>
+        <p>Nothing that identifies you. Anonymous event attendance counts remain, and where another person confirmed that the two of you met, their side of that record stays with them.</p>
+
+        <h2>How long it takes</h2>
+        <p>Deletion from the app is immediate and cannot be undone &mdash; there is no deactivation and no recovery period. A request made through this form is completed within 30 days, and we email you when it is done.</p>
+
+        <h2>Before you go</h2>
+        <p>If the problem is volume, or the wrong kind of introduction, the app settings can narrow who is able to reach you &mdash; and you can stop sharing updates entirely. Deleting is permanent; a setting is not.</p>
+      </div>
+
+      <form class="form card" data-olga-form data-subject="Ol-ga account deletion request" data-success="Request received. We will complete the deletion within 30 days and email you when it is done." id="delete-form">
+          <p class="card-label">Deletion request</p>
+        <div class="field">
+          <label for="d-name">Name on the account</label>
+          <input id="d-name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="d-contact">Email or mobile used to sign in</label>
+          <input id="d-contact" name="account_contact" type="text" required placeholder="you@company.com or +60 12 345 6789">
+        </div>
+        <div class="field">
+          <label for="d-reply">Where we should confirm</label>
+          <input id="d-reply" name="reply_to" type="email" required autocomplete="email" placeholder="Email for the confirmation">
+        </div>
+        <div class="field">
+          <label for="d-reason">Reason (optional)</label>
+          <textarea id="d-reason" name="reason" placeholder="Optional — it helps us fix whatever went wrong."></textarea>
+        </div>
+        <button class="btn" type="submit">Request deletion</button>
+        <p class="form-status" role="status" aria-live="polite" hidden></p>
+        <p class="form-note">We only use what you enter here to find and delete the account, and to confirm it is done.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div class="stack stack-sm">
+      <a class="wordmark" href="/"><span>Ol-ga</span></a>
+      <p class="legal">Olga Technologies Sdn Bhd<br>Kuala Lumpur, Malaysia</p>
+    </div>
+    <div class="links">
+      <span class="label">Site</span>
+      <a href="/professionals/">For professionals</a>
+      <a href="/events/">For events &amp; venues</a>
+      <a href="/about/">About</a>
+    </div>
+    <div class="links">
+      <span class="label">Contact</span>
+      <a href="mailto:hello@ol-ga.com">hello@ol-ga.com</a>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; <span data-year>2026</span> Olga Technologies Sdn Bhd. All rights reserved.</p>
+    <nav class="legal-links" aria-label="Legal and account">
+      <a href="mailto:hello@ol-ga.com">Contact</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/delete/">Delete your account</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>
